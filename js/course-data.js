@@ -1,14 +1,14 @@
 /* ==========================================================================
-   Planning and Prioritising for Results — course content
+   Planning and Prioritizing for Results — course content
    Everything a content editor might change lives in this file.
-   Source: SP-Planning-and-Prioritising-for-Results.pptx (slide text,
+   Source: SP-Planning-and-Prioritizing-for-Results.pptx (slide text,
    tables and speaker notes), restructured for self-paced learning.
    ========================================================================== */
 
 window.COURSE = {
-  id: 'hrc-planning-prioritising',
+  id: 'hrc-planning-prioritizing',
   storageKey: 'hrc-ppr-v1',
-  title: 'Planning and Prioritising for Results',
+  title: 'Planning and Prioritizing for Results',
   programme: 'Succession Development Programme',
   need: 'Planning & Organizing',
   contact: 'learning@healthreconconnect.com',
@@ -21,7 +21,7 @@ window.COURSE = {
    it to match the video you link.                                           */
 window.VIDEOS = {
   v1: {
-    title: 'Video: urgent vs important in practice',
+    title: 'Video: Urgent vs Important in Practice',
     url: '[VIDEO_1_URL]',
     summary: `
       <p>The video walks through the urgent vs important matrix using everyday work examples.</p>
@@ -34,7 +34,7 @@ window.VIDEOS = {
       <p>Takeaway: protect a block of time every week for the important work that prevents tomorrow's fires.</p>`
   },
   v2: {
-    title: 'Video: building a daily planning routine',
+    title: 'Video: Building a Daily Planning Routine',
     url: '[VIDEO_2_URL]',
     summary: `
       <p>The video shows how a short daily routine keeps you in charge of your day.</p>
@@ -59,14 +59,14 @@ window.ACTIVITIES = {
   /* ---- Module 1 ---- */
   costs: {
     type: 'flip',
-    title: 'What poor planning costs in RCM',
+    title: 'What Poor Planning Costs in RCM',
     instructions: 'Flip each card to see what happens when planning slips, and what planning does about it.',
     cards: [
-      { icon: 'cash', front: 'Lost cash', sub: 'The cost you can\u2019t recover',
+      { icon: 'cash', front: 'Lost Cash', sub: 'The cost you can\u2019t recover',
         back: 'Claims that pass their timely-filing deadline are usually lost for good. Every day of delay on high-value work costs money.<br><br><strong>What planning does:</strong> puts high-value, near-deadline claims first, every day.' },
-      { icon: 'fire', front: 'Constant fire-fighting', sub: 'The same problems, again',
+      { icon: 'fire', front: 'Constant Fire-Fighting', sub: 'The same problems, again',
         back: 'When urgent work always wins, the important work, like fixing root causes, never gets done, so the same denials and errors keep coming back.<br><br><strong>What planning does:</strong> protects time for the work that prevents the fires.' },
-      { icon: 'battery', front: 'Burnout and broken promises', sub: 'The cost to people and trust',
+      { icon: 'battery', front: 'Burnout and Broken Promises', sub: 'The cost to people and trust',
         back: 'Month-end overtime, missed deadlines and clients who stop trusting our commitments.<br><br><strong>What planning does:</strong> spreads the load, surfaces risks early, and makes commitments you can keep.' }
     ],
     keyPoints: [
@@ -80,7 +80,7 @@ window.ACTIVITIES = {
   selfcheck: {
     type: 'selfcheck',
     optional: false,
-    title: 'Self-check: busy or productive?',
+    title: 'Self-Check: Busy or Productive?',
     instructions: 'Answer honestly for a typical week. Nobody else sees this, and your score updates as you go.',
     statements: [
       'I start my day with email or chat rather than my plan.',
@@ -90,7 +90,7 @@ window.ACTIVITIES = {
       'I work late at month-end most months.'
     ],
     bands: [
-      { max: 1, label: 'Planner', text: 'You already plan more than most. Use this course to sharpen your prioritising and to help others plan.' },
+      { max: 1, label: 'Planner', text: 'You already plan more than most. Use this course to sharpen your prioritizing and to help others plan.' },
       { max: 3, label: 'Sometimes reactive', text: 'Very common. A few habits, especially a daily Plan\u2013Do\u2013Review, will move you into planner territory.' },
       { max: 5, label: 'Fire-fighter', text: 'Your day is running you. The good news: the tools in this course are built for exactly this, and small changes show results quickly.' }
     ],
@@ -104,12 +104,12 @@ window.ACTIVITIES = {
   /* ---- Module 2 ---- */
   eisenhower: {
     type: 'buckets',
-    title: 'Sort the Tuesday task list',
+    title: 'Sort the Tuesday Task List',
     instructions: 'It\u2019s Tuesday morning. Place each task in the box where it belongs. Drag it, or tap a task and then tap a box.',
     buckets: [
-      { id: 'do', label: 'Do now', hint: 'Urgent and important', tone: 'pink' },
+      { id: 'do', label: 'Do Now', hint: 'Urgent and important', tone: 'pink' },
       { id: 'schedule', label: 'Schedule', hint: 'Important, not urgent', tone: 'green' },
-      { id: 'minimise', label: 'Minimise or delegate', hint: 'Urgent, not important', tone: 'amber' },
+      { id: 'minimise', label: 'Minimise or Delegate', hint: 'Urgent, not important', tone: 'amber' },
       { id: 'drop', label: 'Drop', hint: 'Neither', tone: 'grey' }
     ],
     items: [
@@ -133,11 +133,11 @@ window.ACTIVITIES = {
   /* ---- Module 3 ---- */
   lens: {
     type: 'buckets',
-    title: 'Put each claim in its quadrant',
+    title: 'Put Each Claim in Its Quadrant',
     instructions: 'For this exercise, treat $1,000 or more as high value and 10 days or fewer to timely filing as a close deadline. Drag each claim, or tap it and then tap a quadrant.',
     buckets: [
-      { id: 'first', label: '1 \u00b7 Do first', hint: 'High value, deadline close', tone: 'pink' },
-      { id: 'next', label: '2 \u00b7 Do next', hint: 'Low value, deadline close', tone: 'amber' },
+      { id: 'first', label: '1 \u00b7 Do First', hint: 'High value, deadline close', tone: 'pink' },
+      { id: 'next', label: '2 \u00b7 Do Next', hint: 'Low value, deadline close', tone: 'amber' },
       { id: 'plan', label: '3 \u00b7 Plan', hint: 'High value, deadline far', tone: 'cyan' },
       { id: 'batch', label: '4 \u00b7 Batch', hint: 'Low value, deadline far', tone: 'grey' }
     ],
@@ -161,7 +161,7 @@ window.ACTIVITIES = {
 
   override: {
     type: 'hunt',
-    title: 'Find the item that jumps the queue',
+    title: 'Find the Item That Jumps the Queue',
     instructions: 'This worklist is already sorted with the priority lens. One item should still go before everything else. Click it.',
     render: 'worklist',
     rows: [
@@ -188,7 +188,7 @@ window.ACTIVITIES = {
   /* ---- Module 4 ---- */
   pdr: {
     type: 'buckets',
-    title: 'Build your routine',
+    title: 'Build Your Routine',
     instructions: 'Place each habit in the part of the day where it belongs.',
     buckets: [
       { id: 'plan', label: 'Plan', hint: 'Start of day \u00b7 10 min', tone: 'cyan' },
@@ -196,7 +196,7 @@ window.ACTIVITIES = {
       { id: 'review', label: 'Review', hint: 'End of day \u00b7 5 min', tone: 'green' }
     ],
     items: [
-      { id: 'p1', text: 'Check deadlines and commitments', bucket: 'plan', why: 'You can\u2019t prioritise what you haven\u2019t looked at. This comes first.' },
+      { id: 'p1', text: 'Check deadlines and commitments', bucket: 'plan', why: 'You can\u2019t prioritize what you haven\u2019t looked at. This comes first.' },
       { id: 'p2', text: 'Pick your top three priorities', bucket: 'plan', why: 'Choosing before the day starts is what stops the inbox choosing for you.' },
       { id: 'p3', text: 'Block focus time in your calendar', bucket: 'plan', why: 'Booked at the start of the day, so the time exists before anyone asks for it.' },
       { id: 'p4', text: 'Work in 60\u201390 minute focus blocks', bucket: 'do', why: 'This is how the plan gets done: sustained attention on the top three.' },
@@ -217,7 +217,7 @@ window.ACTIVITIES = {
   /* ---- Path A: Specialist / Senior Analyst ---- */
   triage: {
     type: 'sequence',
-    title: 'Order the daily triage',
+    title: 'Order the Daily Triage',
     instructions: 'Click the five triage steps in the order you\u2019d do them each morning. Click a numbered step again to remove it.',
     items: [
       { id: 't1', text: 'Sort by deadline', detail: 'Order your queue by days left before timely filing.', accept: [1] },
@@ -237,17 +237,17 @@ window.ACTIVITIES = {
 
   focus: {
     type: 'flip',
-    title: 'Four ways to protect your plan',
+    title: 'Four Ways to Protect Your Plan',
     instructions: 'Flip each card for the tactic and the words to use.',
     cards: [
-      { icon: 'clock', front: 'Block focus time', sub: 'Treat it like a meeting',
+      { icon: 'clock', front: 'Block Focus Time', sub: 'Treat it like a meeting',
         back: 'Two 60\u201390 minute blocks a day for your highest-priority claims. Put them in your calendar so others can see them.' },
-      { icon: 'chat', front: 'Batch messages', sub: 'Messages on your schedule',
+      { icon: 'chat', front: 'Batch Messages', sub: 'Messages on your schedule',
         back: 'Check email and chat at set times, for example 10 am, 1 pm and 4 pm, unless something is genuinely urgent.' },
-      { icon: 'hand', front: 'Say \u201cnot now\u201d politely', sub: 'With a time to come back',
+      { icon: 'hand', front: 'Say \u201cNot Now\u201d Politely', sub: 'With a time to come back',
         back: '\u201cI\u2019m finishing claims due Thursday. Can I come back to you at 2 pm?\u201d A time, or an alternative, keeps it kind.' },
-      { icon: 'flag', front: 'Escalate early, with facts', sub: 'When you\u2019re genuinely overloaded',
-        back: '\u201cI have 60 claims due this week and capacity for about 45. Which should I prioritise, or can someone help with the Payer C group?\u201d' }
+      { icon: 'flag', front: 'Escalate Early, With Facts', sub: 'When you\u2019re genuinely overloaded',
+        back: '\u201cI have 60 claims due this week and capacity for about 45. Which should I prioritize, or can someone help with the Payer C group?\u201d' }
     ],
     keyPoints: [
       'Your plan is only as good as your ability to protect it.',
@@ -258,7 +258,7 @@ window.ACTIVITIES = {
 
   simA: {
     type: 'sim',
-    title: 'Simulation: a Tuesday that tries to run you',
+    title: 'Simulation: A Tuesday That Tries to Run You',
     intro: 'You\u2019re a Senior Analyst. Make each call. If a choice isn\u2019t the strongest, you\u2019ll see why and can try again.',
     steps: [
       {
@@ -281,7 +281,7 @@ window.ACTIVITIES = {
         situation: '<p>Which message do you send your ATL?</p>',
         options: [
           { text: '\u201cI\u2019m totally swamped this week, sorry. Can you help?\u201d', correct: false, feedback: 'Honest, but your ATL can\u2019t act on \u201cswamped\u201d. How much is due? How much can you do? What\u2019s at risk?' },
-          { text: '\u201cI have 60 claims due this week and capacity for about 45. The 15 at risk are the Payer C group, about $2,100, due Friday. Could someone take Payer C, or should I prioritise differently?\u201d', correct: true, feedback: 'Facts (60 vs 45), the specific risk (Payer C, $2,100, Friday) and a suggested solution. Your ATL can decide in one reply.' },
+          { text: '\u201cI have 60 claims due this week and capacity for about 45. The 15 at risk are the Payer C group, about $2,100, due Friday. Could someone take Payer C, or should I prioritize differently?\u201d', correct: true, feedback: 'Facts (60 vs 45), the specific risk (Payer C, $2,100, Friday) and a suggested solution. Your ATL can decide in one reply.' },
           { text: '\u201cHeads up: the Payer C claims are going to miss timely filing.\u201d', correct: false, feedback: 'It flags the risk but presents it as already lost, with no numbers and no suggestion. Give your ATL something to act on.' }
         ]
       },
@@ -304,7 +304,7 @@ window.ACTIVITIES = {
 
   queue: {
     type: 'sequence',
-    title: 'Rank your Monday queue',
+    title: 'Rank Your Monday Queue',
     instructions: 'Click the six items in the order you\u2019d work them, using the priority lens and the two overrides.',
     showTable: true,
     columns: ['Item', 'Value', 'Deadline'],
@@ -328,16 +328,16 @@ window.ACTIVITIES = {
   /* ---- Path B: ATL / TL ---- */
   allocate: {
     type: 'flip',
-    title: 'Four allocation principles',
+    title: 'Four Allocation Principles',
     instructions: 'Flip each card for the principle and why it matters.',
     cards: [
-      { icon: 'target', front: 'Deadline and value first', sub: 'Then payer expertise and skill',
+      { icon: 'target', front: 'Deadline and Value First', sub: 'Then payer expertise and skill',
         back: 'Allocate by timely-filing deadline and dollar value first, then match by payer expertise. Arrival order is not a priority.' },
-      { icon: 'people', front: 'Match work to people', sub: 'Stretch, don\u2019t strain',
+      { icon: 'people', front: 'Match Work to People', sub: 'Stretch, don\u2019t strain',
         back: 'Give your strongest people the most complex, high-value work. Use simpler work to develop newer team members.' },
-      { icon: 'clock', front: 'Ten-minute huddle', sub: 'Every morning, rebalance at midday',
+      { icon: 'clock', front: 'Ten-Minute Huddle', sub: 'Every morning, rebalance at midday',
         back: 'A short allocation huddle each morning sets the day. Check again at midday and move work if someone\u2019s ahead or stuck.' },
-      { icon: 'chart', front: 'Track high-value ageing', sub: 'Not just the count worked',
+      { icon: 'chart', front: 'Track High-Value Ageing', sub: 'Not just the count worked',
         back: 'A team can work 300 claims and still let the $10,000 ones age. Watch the ageing of high-value claims, not just volume.' }
     ],
     keyPoints: [
@@ -350,14 +350,14 @@ window.ACTIVITIES = {
   calc: {
     type: 'calculator',
     optional: true,
-    title: 'Try it: quick capacity check',
+    title: 'Try It: Quick Capacity Check',
     instructions: 'Change the numbers to see whether today\u2019s work fits today\u2019s capacity. The defaults are the example from the workshop.',
     defaults: { people: 6, hours: 8, productive: 85, volume: 300, rate: 6 }
   },
 
   dashboard: {
     type: 'hunt',
-    title: 'Find the 9 am warning sign',
+    title: 'Find the 9 am Warning Sign',
     instructions: 'It\u2019s 9 am and this is your team\u2019s dashboard. One figure tells you that you need to act before lunch. Click it.',
     render: 'tiles',
     tiles: [
@@ -385,7 +385,7 @@ window.ACTIVITIES = {
 
   monthend: {
     type: 'sequence',
-    title: 'Plan month-end backwards',
+    title: 'Plan Month-End Backwards',
     instructions: 'Start at the client\u2019s deadline and work back. Click the steps from the final deadline back to the earliest step.',
     items: [
       { id: 'm0', text: 'Final report to the client', detail: 'Day 0: the client\u2019s deadline. Everything is planned back from here.', accept: [1] },
@@ -404,7 +404,7 @@ window.ACTIVITIES = {
 
   risks: {
     type: 'match',
-    title: 'Match each predictable risk to its control',
+    title: 'Match Each Predictable Risk to Its Control',
     instructions: 'Click a risk on the left, then the planning control on the right that prevents it. Click a linked item to unlink it.',
     left: [
       { id: 'r1', text: 'Two people book leave for the last week of the month' },
@@ -435,14 +435,14 @@ window.ACTIVITIES = {
 
   simB: {
     type: 'sim',
-    title: 'Simulation: the month-end crunch',
+    title: 'Simulation: The Month-End Crunch',
     intro: 'You\u2019re the TL. Six working days to month-end. Two of your eight team members are on leave this week, US Thanksgiving falls inside the window, and volume is up 10% on last month.',
     steps: [
       {
         situation: '<p>What\u2019s your overall approach?</p>',
         options: [
           { text: 'Ask everyone to work overtime all week to get through it.', correct: false, feedback: 'It burns people out and still might not fix the timing problem: payers will be closed for part of Thanksgiving no matter how late you work. Overtime is a short, targeted tool, not the plan.' },
-          { text: 'Re-plan backwards: pull cut-offs forward around the holiday, prioritise high-value and near-deadline work, borrow a cross-skilled person, and tell your manager about any risk now.', correct: true, feedback: 'This deals with the holiday, protects the most valuable work, adds capacity where it matters, and gives your manager time to help. Let\u2019s work through it.' },
+          { text: 'Re-plan backwards: pull cut-offs forward around the holiday, prioritize high-value and near-deadline work, borrow a cross-skilled person, and tell your manager about any risk now.', correct: true, feedback: 'This deals with the holiday, protects the most valuable work, adds capacity where it matters, and gives your manager time to help. Let\u2019s work through it.' },
           { text: 'Keep the current plan and hope the volume eases.', correct: false, feedback: 'Hope isn\u2019t a plan. The risk grows every day you wait.' }
         ]
       },
@@ -483,7 +483,7 @@ window.ACTIVITIES = {
   /* ---- Path C: AM / Manager ---- */
   demandcap: {
     type: 'buckets',
-    title: 'Demand or capacity?',
+    title: 'Demand or Capacity?',
     instructions: 'You\u2019re building next quarter\u2019s plan. Is each item part of the demand coming at you, or does it change the capacity you have?',
     buckets: [
       { id: 'demand', label: 'Demand', hint: 'What\u2019s coming', tone: 'amber' },
@@ -509,18 +509,18 @@ window.ACTIVITIES = {
 
   gaps: {
     type: 'flip',
-    title: 'Five ways to close a capacity gap',
+    title: 'Five Ways to Close a Capacity Gap',
     instructions: 'Flip each card for when the option works and what to watch for.',
     cards: [
-      { icon: 'people', front: 'Cross-train', sub: 'Build flexible capacity',
+      { icon: 'people', front: 'Cross-Train', sub: 'Build flexible capacity',
         back: '<strong>Works when:</strong> you have time before the gap hits.<br><strong>Watch for:</strong> it takes weeks, so start before you need it.' },
       { icon: 'swap', front: 'Reallocate', sub: 'From lower-impact work',
         back: '<strong>Works when:</strong> some initiatives can pause.<br><strong>Watch for:</strong> be explicit about what stops, and tell the people affected.' },
-      { icon: 'clock', front: 'Short-term overtime', sub: 'Targeted, time-boxed',
+      { icon: 'clock', front: 'Short-Term Overtime', sub: 'Targeted, time-boxed',
         back: '<strong>Works when:</strong> the peak is short and specific, like month-end.<br><strong>Watch for:</strong> as a standing plan it burns people out.' },
       { icon: 'plus', front: 'Hire', sub: 'Allow for lead time',
         back: '<strong>Works when:</strong> the demand is lasting.<br><strong>Watch for:</strong> hiring plus ramp-up can take months. Plan backfill early.' },
-      { icon: 'handshake', front: 'Agree timelines or scope', sub: 'With the client',
+      { icon: 'handshake', front: 'Agree Timelines or Scope', sub: 'With the client',
         back: '<strong>Works when:</strong> the other options can\u2019t close the gap safely.<br><strong>Watch for:</strong> do it early and offer a trade-off, not a surprise.' }
     ],
     keyPoints: [
@@ -532,13 +532,13 @@ window.ACTIVITIES = {
 
   impact: {
     type: 'buckets',
-    title: 'Sort the initiatives',
+    title: 'Sort the Initiatives',
     instructions: 'Six initiatives are competing for your team\u2019s time. Place each in the impact/effort box where it belongs.',
     buckets: [
-      { id: 'quick', label: 'Quick win', hint: 'High impact, low effort \u00b7 do first', tone: 'green' },
-      { id: 'major', label: 'Major project', hint: 'High impact, high effort \u00b7 plan and resource', tone: 'cyan' },
-      { id: 'fill', label: 'Fill-in', hint: 'Low impact, low effort \u00b7 spare capacity only', tone: 'grey' },
-      { id: 'sink', label: 'Time sink', hint: 'Low impact, high effort \u00b7 stop or push back', tone: 'pink' }
+      { id: 'quick', label: 'Quick Win', hint: 'High impact, low effort \u00b7 do first', tone: 'green' },
+      { id: 'major', label: 'Major Project', hint: 'High impact, high effort \u00b7 plan and resource', tone: 'cyan' },
+      { id: 'fill', label: 'Fill-In', hint: 'Low impact, low effort \u00b7 spare capacity only', tone: 'grey' },
+      { id: 'sink', label: 'Time Sink', hint: 'Low impact, high effort \u00b7 stop or push back', tone: 'pink' }
     ],
     items: [
       { id: 'i1', text: 'Fix a payer-mapping rule that causes about 200 denials a month. Roughly two hours of configuration.', bucket: 'quick', why: 'Huge impact for two hours. Do it this week.' },
@@ -558,7 +558,7 @@ window.ACTIVITIES = {
 
   trigger: {
     type: 'hunt',
-    title: 'Find the week the trigger fires',
+    title: 'Find the Week the Trigger Fires',
     instructions: 'Your trigger: \u201cIf inflow is above 110% of forecast for two weeks, we activate the cross-trained pool.\u201d Click the cell where you act.',
     render: 'grid',
     weeks: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
@@ -595,7 +595,7 @@ window.ACTIVITIES = {
 
   simC: {
     type: 'sim',
-    title: 'Simulation: the Q4 squeeze',
+    title: 'Simulation: The Q4 Squeeze',
     intro: 'A new client goes live on 1 November and needs four FTEs. An existing client\u2019s month-end falls in the same week. Two experienced team members have resigned and leave in two weeks. There\u2019s no budget for new hires until January.',
     steps: [
       {
@@ -643,7 +643,7 @@ window.ACTIVITIES = {
 
 /* ---------- Quizzes -------------------------------------------------------- */
 window.QUIZZES = {
-  cfu1: { title: 'Check for understanding', questions: [
+  cfu1: { title: 'Check for Understanding', questions: [
     { q: 'Why do claims that pass their timely-filing deadline matter so much?',
       options: ['They need an extra round of review', 'They usually can\u2019t be recovered', 'They take longer to post'], answer: 1,
       explain: 'Past timely filing, a claim is usually lost for good. That\u2019s why delay on high-value work costs real money.' },
@@ -651,18 +651,18 @@ window.QUIZZES = {
       options: ['Doing more in less time', 'Never being interrupted', 'Doing the right things first'], answer: 2,
       explain: 'Planning isn\u2019t about doing more. It\u2019s about doing the right things first.' }
   ]},
-  cfu2: { title: 'Check for understanding', questions: [
+  cfu2: { title: 'Check for Understanding', questions: [
     { q: 'A denial keeps coming back for the same reason. Fixing the root cause would take about an hour. Where does it belong?',
-      options: ['Do now', 'Schedule', 'Minimise or delegate', 'Drop'], answer: 1,
+      options: ['Do Now', 'Schedule', 'Minimise or Delegate', 'Drop'], answer: 1,
       explain: 'Important but not urgent: schedule it. This is exactly the work that prevents future fires.' },
     { q: 'Which box is \u201cwhere results are made\u201d?',
-      options: ['Do now: urgent and important', 'Schedule: important, not urgent', 'Minimise: urgent, not important'], answer: 1,
+      options: ['Do Now: urgent and important', 'Schedule: important, not urgent', 'Minimise: urgent, not important'], answer: 1,
       explain: 'Every hour in Schedule means fewer fires later. Protect time for it every week.' },
     { q: 'You\u2019re in a focus block. A colleague asks a question that someone else on the team could easily answer. What do you do?',
       options: ['Answer immediately so they aren\u2019t blocked', 'Point them to the right person, or offer a set time', 'Ignore it'], answer: 1,
       explain: 'Urgent for them, not important for your plan: minimise or delegate, kindly.' }
   ]},
-  cfu3: { title: 'Check for understanding', questions: [
+  cfu3: { title: 'Check for Understanding', questions: [
     { q: 'Two claims: $300 due in 2 days, and $5,000 due in 40 days. Which do you work first?',
       options: ['The $5,000 claim', 'The $300 claim', 'Whichever arrived first'], answer: 1,
       explain: 'The $300 claim is Do next: close to its deadline and lost if you wait. The $5,000 claim is Plan: valuable, but it still has time.' },
@@ -673,7 +673,7 @@ window.QUIZZES = {
       options: ['Nothing, it\u2019s the fairest method', 'It ignores dollar value and timely-filing deadlines', 'It takes too long to sort'], answer: 1,
       explain: 'Oldest-first feels fair, but a high-value claim with 3 days left can sit behind dozens of low-value ones.' }
   ]},
-  cfu4: { title: 'Check for understanding', questions: [
+  cfu4: { title: 'Check for Understanding', questions: [
     { q: 'It\u2019s Tuesday, 9 am. What do you do first?',
       options: ['Reply to the 25 unread emails in your inbox', 'Work the three claims ($6,800 in total) that reach timely filing on Thursday', 'Start the process-improvement idea your manager mentioned last week', 'Re-format yesterday\u2019s report so it looks neater'], answer: 1,
       optionFeedback: [
@@ -690,7 +690,7 @@ window.QUIZZES = {
       options: ['Everyone\u2019s performance ratings', 'The week\u2019s deadlines, your capacity and any risks', 'Clearing your inbox to zero'], answer: 1,
       explain: 'About 20 minutes on Monday on deadlines, capacity and risks, so you\u2019re rarely surprised by a deadline.' }
   ]},
-  cfuA: { title: 'Check for understanding', questions: [
+  cfuA: { title: 'Check for Understanding', questions: [
     { q: 'In your daily triage, after sorting by days left before timely filing, what comes next?',
       options: ['Work the highest dollar value first within each deadline band', 'Work the oldest claims first', 'Answer your messages'], answer: 0,
       explain: 'Deadline first, then value: the priority lens applied to your own queue.' },
@@ -698,7 +698,7 @@ window.QUIZZES = {
       options: ['Work each claim as normal', 'Escalate it as a pattern', 'Move them to the bottom of the queue'], answer: 1,
       explain: 'A pattern is worth escalating: one root-cause fix can clear many denials.' }
   ]},
-  cfuB: { title: 'Check for understanding', questions: [
+  cfuB: { title: 'Check for Understanding', questions: [
     { q: 'Six people, eight hours each, 85% productive time. Roughly how many productive hours do you have?',
       options: ['48 hours', 'About 41 hours', 'About 36 hours'], answer: 1,
       explain: '6 \u00d7 8 \u00d7 0.85 = 40.8, so about 41 hours. Compare that with the hours of work due, every morning.' },
@@ -706,7 +706,7 @@ window.QUIZZES = {
       options: ['Ask the client for a later deadline', 'Pull your cut-offs forward', 'Plan overtime for the day after'], answer: 1,
       explain: 'The client\u2019s deadline holds. Your internal cut-offs move forward around the holiday.' }
   ]},
-  cfuC: { title: 'Check for understanding', questions: [
+  cfuC: { title: 'Check for Understanding', questions: [
     { q: 'What turns a scenario plan into action without waiting for a crisis?',
       options: ['Monthly status meetings', 'Clear triggers', 'A bigger overtime budget'], answer: 1,
       explain: 'Triggers (a measure, a threshold, a duration and an action) mean you act early.' },
@@ -714,7 +714,7 @@ window.QUIZZES = {
       options: ['Do it first', 'Plan and resource it properly', 'Stop it, or push back'], answer: 2,
       explain: 'That\u2019s a time sink. Stop it, or push back with a clear trade-off.' }
   ]},
-  final: { title: 'Final knowledge check', graded: true, questions: [
+  final: { title: 'Final Knowledge Check', graded: true, questions: [
     { q: 'Which box of the urgent vs important matrix should you protect the most time for?',
       options: ['Urgent and important', 'Important, not urgent', 'Urgent, not important'], answer: 1,
       explain: 'Important, not urgent: this is where you prevent problems through root-cause fixes, preparation and learning.' },
@@ -740,7 +740,7 @@ window.QUIZZES = {
       options: ['Work late and say nothing', 'Raise it early, with facts and a suggested solution', 'Wait to see how the week goes'], answer: 1,
       explain: 'Raise capacity risks early, with facts (what\u2019s due vs what you can do) and a suggestion.' },
     { q: '40 claims at about $35 each, with 60 days left before timely filing. Where do they sit in the priority lens?',
-      options: ['Do first', 'Do next', 'Plan', 'Batch'], answer: 3,
+      options: ['Do First', 'Do Next', 'Plan', 'Batch'], answer: 3,
       explain: 'Low value, deadline far: batch them and clear them in a block later in the week.' },
     { q: 'Which is an example of the Schedule box at work?',
       options: ['Answering a routine status ping straight away', 'Booking an hour this week to fix the root cause of a recurring denial', 'Re-checking a report nobody uses'], answer: 1,
@@ -764,12 +764,12 @@ window.REFLECTIONS = {
 
 /* ---------- Paths ---------------------------------------------------------- */
 window.PATHS = {
-  A: { id: 'A', role: 'Specialist / Senior Analyst', title: 'Planning your own work', module: 'pathA', tone: 'cyan',
-       bullets: ['Plan and prioritise your own queue', 'Protect focus time and handle interruptions', 'Know when to escalate overload'] },
-  B: { id: 'B', role: 'ATL / TL', title: 'Planning your team\u2019s work', module: 'pathB', tone: 'violet',
+  A: { id: 'A', role: 'Specialist / Senior Analyst', title: 'Planning Your Own Work', module: 'pathA', tone: 'cyan',
+       bullets: ['Plan and prioritize your own queue', 'Protect focus time and handle interruptions', 'Know when to escalate overload'] },
+  B: { id: 'B', role: 'ATL / TL', title: 'Planning Your Team\u2019s Work', module: 'pathB', tone: 'violet',
        bullets: ['Allocate work across your team by priority', 'Plan month-end backwards from the deadline', 'Plan around leave and US holidays'] },
-  C: { id: 'C', role: 'AM / Manager', title: 'Planning capacity and priorities', module: 'pathC', tone: 'amber',
-       bullets: ['Match capacity to demand', 'Prioritise across clients and initiatives', 'Plan for risk with scenarios'] }
+  C: { id: 'C', role: 'AM / Manager', title: 'Planning Capacity and Priorities', module: 'pathC', tone: 'amber',
+       bullets: ['Match capacity to demand', 'Prioritize across clients and initiatives', 'Plan for risk with scenarios'] }
 };
 
 /* ---------- Modules and pages ----------------------------------------------
@@ -778,13 +778,13 @@ window.PATHS = {
    completion unless the activity is marked optional.                        */
 window.MODULES = [
   { id: 'welcome', part: 'start', title: 'Welcome', pages: [
-    { title: 'Planning and Prioritising for Results', hero: true, blocks: [
+    { title: 'Planning and Prioritizing for Results', hero: true, blocks: [
       { t: 'html', html: `
         <p class="lede">Learn practical ways to decide what matters most, plan your time and your team\u2019s time, and deliver results without constant fire-fighting.</p>
         <p>This is the formal learning for your <strong>Planning &amp; Organizing</strong> development need in the Succession Development Programme. It takes about 50 minutes, and your progress saves automatically in this browser, so you can stop and come back at any time.</p>` },
       { t: 'name' },
       { t: 'html', html: `
-        <h3>How it works</h3>
+        <h3>How It Works</h3>
         <ol class="flow">
           <li><strong>Part 1: the foundation.</strong> Core planning tools everyone uses. About 20 minutes.</li>
           <li><strong>Part 2: your path.</strong> Choose your level and follow the path built for your role. About 20 minutes.</li>
@@ -792,12 +792,12 @@ window.MODULES = [
         </ol>
         <div class="callout tip"><p>Have your IDP open for the reflection prompts. Your answers are saved here and can be downloaded as a PDF to bring to your mentor.</p></div>` }
     ]},
-    { title: 'What you\u2019ll be able to do', blocks: [
+    { title: 'What You\u2019ll Be Able to Do', blocks: [
       { t: 'html', html: `
         <p>By the end of this course, you\u2019ll be able to:</p>
         <ul class="objectives">
           <li><span class="ob-mark" aria-hidden="true"></span><div><strong>Separate urgent from important</strong><br>and protect time for the work that prevents problems.</div></li>
-          <li><span class="ob-mark" aria-hidden="true"></span><div><strong>Prioritise using the RCM priority lens</strong><br>dollar value, timely-filing deadline, compliance and client commitments.</div></li>
+          <li><span class="ob-mark" aria-hidden="true"></span><div><strong>Prioritize using the RCM priority lens</strong><br>dollar value, timely-filing deadline, compliance and client commitments.</div></li>
           <li><span class="ob-mark" aria-hidden="true"></span><div><strong>Plan your day, week and month</strong><br>with a simple Plan\u2013Do\u2013Review routine.</div></li>
           <li><span class="ob-mark" aria-hidden="true"></span><div><strong>Apply planning at your level</strong><br>your own queue, your team\u2019s work, or the account\u2019s capacity.</div></li>
         </ul>
@@ -805,65 +805,65 @@ window.MODULES = [
     ]}
   ]},
 
-  { id: 'm1', part: 'p1', title: 'Why planning matters', pages: [
-    { title: 'Why planning matters in RCM', blocks: [
+  { id: 'm1', part: 'p1', title: 'Why Planning Matters', pages: [
+    { title: 'Why Planning Matters in RCM', blocks: [
       { t: 'html', html: `<p class="lede">Planning isn\u2019t about doing more. It\u2019s about doing the right things first.</p>
         <p>In revenue cycle management, poor planning has real costs. Explore the three below.</p>` },
       { t: 'act', id: 'costs' }
     ]},
-    { title: 'Busy or productive?', blocks: [
+    { title: 'Busy or Productive?', blocks: [
       { t: 'html', html: `<p>Before going further, a quick, private self-check. Keep your score in mind as you work through the course.</p>` },
       { t: 'act', id: 'selfcheck' }
     ]},
-    { title: 'Check for understanding', blocks: [ { t: 'quiz', id: 'cfu1' } ] }
+    { title: 'Check for Understanding', blocks: [ { t: 'quiz', id: 'cfu1' } ] }
   ]},
 
-  { id: 'm2', part: 'p1', title: 'Urgent vs important', pages: [
-    { title: 'Urgent vs important', blocks: [
+  { id: 'm2', part: 'p1', title: 'Urgent vs Important', pages: [
+    { title: 'Urgent vs Important', blocks: [
       { t: 'html', html: `<p class="lede">Every task is urgent, important, both, or neither. The trick is asking both questions.</p>
         <p>The Eisenhower matrix, popularised by Stephen Covey, applied to RCM:</p>
         <div class="matrix" role="table" aria-label="Urgent vs important matrix">
           <div class="mx-axis mx-axis-top" aria-hidden="true"><span>Urgent</span><span>Not urgent</span></div>
           <div class="mx-axis mx-axis-side" aria-hidden="true"><span>Important</span><span>Not important</span></div>
-          <div class="mx-cell tone-pink" role="cell"><h4>Do now</h4><p class="mx-sub">Urgent and important</p><p>Claims hitting timely filing this week, a client escalation, a committed deliverable due today.</p></div>
+          <div class="mx-cell tone-pink" role="cell"><h4>Do Now</h4><p class="mx-sub">Urgent and important</p><p>Claims hitting timely filing this week, a client escalation, a committed deliverable due today.</p></div>
           <div class="mx-cell tone-green mx-key" role="cell"><h4>Schedule</h4><p class="mx-sub">Important, not urgent</p><p>Root-cause fixes, month-end preparation, learning and cross-training, process improvements.</p></div>
-          <div class="mx-cell tone-amber" role="cell"><h4>Minimise or delegate</h4><p class="mx-sub">Urgent, not important</p><p>Interruptions others could handle, some meetings and chat requests, routine status checks.</p></div>
+          <div class="mx-cell tone-amber" role="cell"><h4>Minimise or Delegate</h4><p class="mx-sub">Urgent, not important</p><p>Interruptions others could handle, some meetings and chat requests, routine status checks.</p></div>
           <div class="mx-cell tone-grey" role="cell"><h4>Drop</h4><p class="mx-sub">Neither</p><p>Re-checking reports nobody uses, perfecting low-value work, unnecessary copy-ins.</p></div>
         </div>
         <div class="callout key"><p><strong>The key insight:</strong> the Schedule box is where results are made. It never shouts, so it has to be booked on purpose. Every hour spent there means fewer fires to fight later. Aim to protect time for it every week.</p></div>` }
     ]},
-    { title: 'Watch: urgent vs important in practice', blocks: [ { t: 'video', id: 'v1' } ] },
-    { title: 'Try it: sort the task list', blocks: [ { t: 'act', id: 'eisenhower' } ] },
-    { title: 'Check for understanding', blocks: [ { t: 'quiz', id: 'cfu2' } ] }
+    { title: 'Watch: Urgent vs Important in Practice', blocks: [ { t: 'video', id: 'v1' } ] },
+    { title: 'Try It: Sort the Task List', blocks: [ { t: 'act', id: 'eisenhower' } ] },
+    { title: 'Check for Understanding', blocks: [ { t: 'quiz', id: 'cfu2' } ] }
   ]},
 
-  { id: 'm3', part: 'p1', title: 'The RCM priority lens', pages: [
-    { title: 'The RCM priority lens', blocks: [
+  { id: 'm3', part: 'p1', title: 'The RCM Priority Lens', pages: [
+    { title: 'The RCM Priority Lens', blocks: [
       { t: 'html', html: `<p class="lede">Within urgent work, how do you decide the order? Working oldest first ignores value and deadlines. Use this lens instead.</p>
         <div class="lens">
           <div class="lens-grid">
-            <div class="lens-cell tone-amber"><span class="lens-n">2</span><h4>Do next</h4><p>Low value, deadline close. Quick wins before they\u2019re lost.</p></div>
-            <div class="lens-cell tone-pink"><span class="lens-n">1</span><h4>Do first</h4><p>High value, deadline close. Every day counts.</p></div>
+            <div class="lens-cell tone-amber"><span class="lens-n">2</span><h4>Do Next</h4><p>Low value, deadline close. Quick wins before they\u2019re lost.</p></div>
+            <div class="lens-cell tone-pink"><span class="lens-n">1</span><h4>Do First</h4><p>High value, deadline close. Every day counts.</p></div>
             <div class="lens-cell tone-grey"><span class="lens-n">4</span><h4>Batch</h4><p>Low value, deadline far. Group and clear in blocks.</p></div>
             <div class="lens-cell tone-cyan"><span class="lens-n">3</span><h4>Plan</h4><p>High value, deadline far. Schedule before it becomes urgent.</p></div>
             <div class="lens-x" aria-hidden="true">Dollar value: low \u2192 high</div>
             <div class="lens-y" aria-hidden="true">Deadline: far \u2192 close</div>
           </div>
           <div class="lens-over">
-            <h4>Two overrides: these always go first</h4>
+            <h4>Two Overrides: These Always Go First</h4>
             <p><strong>Compliance or PHI risk.</strong> Possible HIPAA or patient information issues are escalated immediately, whatever their dollar value.</p>
             <p><strong>Client commitments.</strong> Anything we\u2019ve promised a client by a date. Breaking a commitment costs trust that\u2019s hard to win back.</p>
           </div>
         </div>
-        <p>Notice that <strong>Do next</strong> ranks above <strong>Plan</strong>: a low-value claim about to be lost beats a high-value claim that still has weeks. Once it\u2019s lost, it\u2019s lost.</p>` }
+        <p>Notice that <strong>Do Next</strong> ranks above <strong>Plan</strong>: a low-value claim about to be lost beats a high-value claim that still has weeks. Once it\u2019s lost, it\u2019s lost.</p>` }
     ]},
-    { title: 'Try it: sort the claims', blocks: [ { t: 'act', id: 'lens' } ] },
-    { title: 'Try it: spot the override', blocks: [ { t: 'act', id: 'override' } ] },
-    { title: 'Check for understanding', blocks: [ { t: 'quiz', id: 'cfu3' } ] }
+    { title: 'Try It: Sort the Claims', blocks: [ { t: 'act', id: 'lens' } ] },
+    { title: 'Try It: Spot the Override', blocks: [ { t: 'act', id: 'override' } ] },
+    { title: 'Check for Understanding', blocks: [ { t: 'quiz', id: 'cfu3' } ] }
   ]},
 
   { id: 'm4', part: 'p1', title: 'Plan, Do, Review', pages: [
-    { title: 'Plan, Do, Review: a simple routine', blocks: [
+    { title: 'Plan, Do, Review: A Simple Routine', blocks: [
       { t: 'html', html: `<p class="lede">Fifteen minutes a day that saves hours.</p>
         <div class="pdr">
           <div class="pdr-step tone-cyan"><h4>Plan</h4><p class="pdr-when">Start of day \u00b7 10 min</p><p>Check deadlines and commitments. Pick your top three. Block focus time.</p></div>
@@ -872,89 +872,89 @@ window.MODULES = [
         </div>
         <div class="callout tip"><p><strong>Weekly:</strong> spend 20 minutes on Monday reviewing the week\u2019s deadlines, your capacity and any risks. Do this and you\u2019ll rarely be surprised by a deadline.</p></div>` }
     ]},
-    { title: 'Watch: building a daily routine', blocks: [ { t: 'video', id: 'v2' } ] },
-    { title: 'Try it: build your routine', blocks: [ { t: 'act', id: 'pdr' } ] },
-    { title: 'Pause and reflect', blocks: [
+    { title: 'Watch: Building a Daily Routine', blocks: [ { t: 'video', id: 'v2' } ] },
+    { title: 'Try It: Build Your Routine', blocks: [ { t: 'act', id: 'pdr' } ] },
+    { title: 'Pause and Reflect', blocks: [
       { t: 'html', html: `<p>Turn the routine into a commitment. Your answer is saved here and included in your PDF.</p>` },
       { t: 'reflect', id: 'r_habit' }
     ]},
-    { title: 'Check for understanding', blocks: [
+    { title: 'Check for Understanding', blocks: [
       { t: 'quiz', id: 'cfu4' },
       { t: 'html', html: `<div class="callout key"><p><strong>That\u2019s Part 1.</strong> Next, choose the path for your role.</p></div>` }
     ]}
   ]},
 
-  { id: 'choose', part: 'p2', title: 'Choose your path', pages: [
-    { title: 'Choose your path', blocks: [
+  { id: 'choose', part: 'p2', title: 'Choose Your Path', pages: [
+    { title: 'Choose Your Path', blocks: [
       { t: 'html', html: `<p>Pick the path that matches your current role. It becomes required for your certificate. If you\u2019re preparing for your next role, you\u2019re welcome to explore the other paths too; they\u2019re optional.</p>` },
       { t: 'pathpicker' }
     ]}
   ]},
 
-  { id: 'pathA', part: 'p2', path: 'A', title: 'Planning your own work', pages: [
-    { title: 'Your daily triage routine', blocks: [
+  { id: 'pathA', part: 'p2', path: 'A', title: 'Planning Your Own Work', pages: [
+    { title: 'Your Daily Triage Routine', blocks: [
       { t: 'html', html: `<p class="lede">Fifteen minutes at the start of your day turns a queue into a plan.</p>
         <p>The order your work arrives in isn\u2019t the order it should be done in. First-in-first-out feels fair, but it lets high-value claims slip past their deadline. Work the plan, not the inbox.</p>` },
       { t: 'act', id: 'triage' }
     ]},
-    { title: 'Protect your focus', blocks: [
+    { title: 'Protect Your Focus', blocks: [
       { t: 'html', html: `<p class="lede">Interruptions are the biggest threat to your plan.</p>` },
       { t: 'act', id: 'focus' }
     ]},
-    { title: 'Practise the conversations', blocks: [ { t: 'act', id: 'simA' } ] },
-    { title: 'Scenario: your Monday queue', blocks: [ { t: 'act', id: 'queue' } ] },
-    { title: 'Put it into practice', blocks: [
+    { title: 'Practise the Conversations', blocks: [ { t: 'act', id: 'simA' } ] },
+    { title: 'Scenario: Your Monday Queue', blocks: [ { t: 'act', id: 'queue' } ] },
+    { title: 'Put It Into Practice', blocks: [
       { t: 'html', html: `<div class="assignment"><p class="as-tag">Your on-the-job assignment \u00b7 DI-30</p>
-        <h3>Take over the work-queue allocation</h3>
+        <h3>Take Over the Work-Queue Allocation</h3>
         <p>Plan work by ageing, dollar value and payer rather than first-in-first-out. Start with your own queue, then agree with your ATL to allocate for a small group.</p>
         <p><strong>Proof of completion:</strong> four weeks of allocation with improvement in high-value ageing. Dates are in your personal training plan.</p></div>
-        <h3>Pause and reflect</h3>` },
+        <h3>Pause and Reflect</h3>` },
       { t: 'reflect', id: 'rA1' }, { t: 'reflect', id: 'rA2' }, { t: 'reflect', id: 'rA3' }
     ]},
-    { title: 'Check for understanding', blocks: [ { t: 'quiz', id: 'cfuA' } ] }
+    { title: 'Check for Understanding', blocks: [ { t: 'quiz', id: 'cfuA' } ] }
   ]},
 
-  { id: 'pathB', part: 'p2', path: 'B', title: 'Planning your team\u2019s work', pages: [
-    { title: 'Allocate by priority, not arrival', blocks: [
+  { id: 'pathB', part: 'p2', path: 'B', title: 'Planning Your Team\u2019s Work', pages: [
+    { title: 'Allocate by Priority, Not Arrival', blocks: [
       { t: 'html', html: `<p class="lede">Daily allocation is your most powerful planning lever.</p>` },
       { t: 'act', id: 'allocate' },
       { t: 'act', id: 'calc' }
     ]},
-    { title: 'Read the dashboard', blocks: [ { t: 'act', id: 'dashboard' } ] },
-    { title: 'Plan month-end backwards', blocks: [
+    { title: 'Read the Dashboard', blocks: [ { t: 'act', id: 'dashboard' } ] },
+    { title: 'Plan Month-End Backwards', blocks: [
       { t: 'html', html: `<p class="lede">Month-end runs smoothly when it\u2019s planned backwards from the client\u2019s deadline.</p>
         <p>Start with the final report date, then work back. Give every step one owner, build in a buffer day, and check status daily in the final week.</p>` },
       { t: 'act', id: 'monthend' }
     ]},
-    { title: 'Leave, US holidays and contingency', blocks: [
+    { title: 'Leave, US Holidays and Contingency', blocks: [
       { t: 'html', html: `<p class="lede">Most month-end problems are predictable. Plan for them.</p>` },
       { t: 'act', id: 'risks' }
     ]},
-    { title: 'Practise: the month-end crunch', blocks: [ { t: 'act', id: 'simB' } ] },
-    { title: 'Put it into practice', blocks: [
+    { title: 'Practise: The Month-End Crunch', blocks: [ { t: 'act', id: 'simB' } ] },
+    { title: 'Put It Into Practice', blocks: [
       { t: 'html', html: `<div class="assignment two">
-          <div><p class="as-tag">ATL \u00b7 DI-30</p><h3>Take over the work-queue allocation</h3>
+          <div><p class="as-tag">ATL \u00b7 DI-30</p><h3>Take Over the Work-Queue Allocation</h3>
           <p>Own daily allocation by ageing, value and payer.</p><p><strong>Proof:</strong> four weeks with improvement in high-value ageing.</p></div>
-          <div><p class="as-tag">TL \u00b7 DI-28</p><h3>Own the month-end close plan for your client</h3>
+          <div><p class="as-tag">TL \u00b7 DI-28</p><h3>Own the Month-End Close Plan for Your Client</h3>
           <p>Build and run the plan: cut-offs, posting, reconciliation, reporting.</p><p><strong>Proof:</strong> two closes delivered on date with no missed deliverable.</p></div>
         </div>
-        <h3>Pause and reflect</h3>` },
+        <h3>Pause and Reflect</h3>` },
       { t: 'reflect', id: 'rB1' }, { t: 'reflect', id: 'rB2' }, { t: 'reflect', id: 'rB3' }
     ]},
-    { title: 'Check for understanding', blocks: [ { t: 'quiz', id: 'cfuB' } ] }
+    { title: 'Check for Understanding', blocks: [ { t: 'quiz', id: 'cfuB' } ] }
   ]},
 
-  { id: 'pathC', part: 'p2', path: 'C', title: 'Planning capacity and priorities', pages: [
-    { title: 'Capacity vs demand', blocks: [
+  { id: 'pathC', part: 'p2', path: 'C', title: 'Planning Capacity and Priorities', pages: [
+    { title: 'Capacity vs Demand', blocks: [
       { t: 'html', html: `<p class="lede">At your level, plan the next quarter, not just the next week.</p>` },
       { t: 'act', id: 'demandcap' }
     ]},
-    { title: 'Closing a gap', blocks: [ { t: 'act', id: 'gaps' } ] },
-    { title: 'Prioritise across clients and initiatives', blocks: [
+    { title: 'Closing a Gap', blocks: [ { t: 'act', id: 'gaps' } ] },
+    { title: 'Prioritize Across Clients and Initiatives', blocks: [
       { t: 'html', html: `<p class="lede">You can\u2019t do everything at once. Choose deliberately.</p>` },
       { t: 'act', id: 'impact' }
     ]},
-    { title: 'Plan for what could go wrong', blocks: [
+    { title: 'Plan for What Could Go Wrong', blocks: [
       { t: 'html', html: `<p>Decide your moves before you need them. Sketch three scenarios for the next quarter and your response to each:</p>
         <div class="table-wrap"><table class="data">
           <thead><tr><th>Scenario</th><th>What it looks like</th><th>Your planned response</th></tr></thead>
@@ -966,38 +966,38 @@ window.MODULES = [
         <p>Then set triggers, and review the scenarios monthly.</p>` },
       { t: 'act', id: 'trigger' }
     ]},
-    { title: 'Practise: the Q4 squeeze', blocks: [ { t: 'act', id: 'simC' } ] },
-    { title: 'Put it into practice', blocks: [
+    { title: 'Practise: The Q4 Squeeze', blocks: [ { t: 'act', id: 'simC' } ] },
+    { title: 'Put It Into Practice', blocks: [
       { t: 'html', html: `<div class="assignment"><p class="as-tag">Your on-the-job assignment \u00b7 DI-29</p>
-        <h3>Build the shift and capacity plan</h3>
+        <h3>Build the Shift and Capacity Plan</h3>
         <p>Plan coverage against forecast volume, leave and US holidays, and hold it for a quarter.</p>
         <p><strong>Proof of completion:</strong> a quarter completed with service levels met and no unplanned overtime spike.</p></div>
-        <h3>Pause and reflect</h3>` },
+        <h3>Pause and Reflect</h3>` },
       { t: 'reflect', id: 'rC1' }, { t: 'reflect', id: 'rC2' }, { t: 'reflect', id: 'rC3' }
     ]},
-    { title: 'Check for understanding', blocks: [ { t: 'quiz', id: 'cfuC' } ] }
+    { title: 'Check for Understanding', blocks: [ { t: 'quiz', id: 'cfuC' } ] }
   ]},
 
-  { id: 'wrap', part: 'wrap', title: 'Final check', pages: [
-    { title: 'Five ideas to take back to your desk', blocks: [
+  { id: 'wrap', part: 'wrap', title: 'Final Check', pages: [
+    { title: 'Five Ideas to Take Back to Your Desk', blocks: [
       { t: 'html', html: `<p>A quick recap before the final knowledge check.</p>
         <ol class="takeaways">
           <li>Protect time for important, not-urgent work. It\u2019s where results are made.</li>
-          <li>Prioritise by deadline and dollar value, and put compliance and client commitments first.</li>
+          <li>Prioritize by deadline and dollar value, and put compliance and client commitments first.</li>
           <li>Plan, Do, Review: ten minutes in the morning, five minutes at the end of the day.</li>
           <li>Plan big deadlines backwards, with owners, a buffer and early warnings.</li>
           <li>Raise capacity risks early, with facts and a suggested solution.</li>
         </ol>` }
     ]},
-    { title: 'Final knowledge check', blocks: [
+    { title: 'Final Knowledge Check', blocks: [
       { t: 'html', html: `<p>Ten questions for everyone. You need <strong>${window.COURSE.passMark}%</strong> to pass, and you can retake it.</p>` },
       { t: 'quiz', id: 'final' }
     ]}
   ]},
 
-  { id: 'finish', part: 'wrap', title: 'Results and certificate', pages: [
-    { title: 'Your results', blocks: [ { t: 'results' } ] },
-    { title: 'Your next steps', blocks: [
+  { id: 'finish', part: 'wrap', title: 'Results and Certificate', pages: [
+    { title: 'Your Results', blocks: [ { t: 'results' } ] },
+    { title: 'Your Next Steps', blocks: [
       { t: 'html', html: `<ol class="flow">
           <li><strong>Complete this course.</strong> Pass the final check and download your certificate.</li>
           <li><strong>Start your on-the-job assignment.</strong> The dates are in your personal training plan.</li>
@@ -1006,6 +1006,6 @@ window.MODULES = [
         </ol>` },
       { t: 'downloads' }
     ]},
-    { title: 'Your certificate', blocks: [ { t: 'certificate' } ] }
+    { title: 'Your Certificate', blocks: [ { t: 'certificate' } ] }
   ]}
 ];

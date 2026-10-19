@@ -148,7 +148,7 @@
   }
 
   /* ---------------- Sidebar ---------------- */
-  const groups = [['start', 'Start'], ['p1', 'Part 1: the foundation'], ['p2', 'Part 2: your path'], ['wrap', 'Wrap-up']];
+  const groups = [['start', 'Start'], ['p1', 'Part 1: The Foundation'], ['p2', 'Part 2: Your Path'], ['wrap', 'Wrap-Up']];
   function renderNav() {
     const nav = $('#nav-list'); nav.innerHTML = '';
     const cur = currentRoute();
@@ -421,10 +421,7 @@
   function scoreRows() {
     const rows = [];
     const add = (label, qid) => { const q = S.quiz[qid]; rows.push([label, q && q.attempts ? `${q.best}% (best of ${q.attempts})` : 'Not attempted']); };
-    add('Module 1: Why planning matters', 'cfu1');
-    add('Module 2: Urgent vs important', 'cfu2');
-    add('Module 3: The RCM priority lens', 'cfu3');
-    add('Module 4: Plan, Do, Review', 'cfu4');
+    ['m1', 'm2', 'm3', 'm4'].forEach((id, i) => add(`Module ${i + 1}: ${modById(id).title}`, 'cfu' + (i + 1)));
     Object.values(P).forEach(p => { if (S.path === p.id || (S.quiz['cfu' + p.id] && S.quiz['cfu' + p.id].attempts)) add(`Path: ${p.title}`, 'cfu' + p.id); });
     return rows;
   }
@@ -435,14 +432,14 @@
     const relevant = acts.filter(k => { const m = M.find(mm => mm.pages.some(p => p.blocks.some(b => b.t === 'act' && b.id === k))); return !m.path || m.path === S.path; });
     const doneActs = relevant.filter(k => S.act[k] && S.act[k].done).length;
     wrap.append(h('div', { class: 'stat-row' },
-      h('div', { class: 'stat' }, h('span', { class: 'stat-v' }, fin == null ? '\u2014' : fin + '%'), h('span', { class: 'stat-l' }, 'Final knowledge check')),
+      h('div', { class: 'stat' }, h('span', { class: 'stat-v' }, fin == null ? '\u2014' : fin + '%'), h('span', { class: 'stat-l' }, 'Final Knowledge Check')),
       h('div', { class: 'stat' }, h('span', { class: 'stat-v' }, `${doneActs}/${relevant.length}`), h('span', { class: 'stat-l' }, 'Activities completed')),
       h('div', { class: 'stat' }, h('span', { class: 'stat-v' }, fmtTime(S.seconds)), h('span', { class: 'stat-l' }, 'Time invested'))));
     const tb = h('tbody');
     scoreRows().forEach(r => tb.append(h('tr', null, h('td', null, r[0]), h('td', null, r[1]))));
-    tb.append(h('tr', { class: 'total' }, h('td', null, 'Final knowledge check (graded)'), h('td', null, fin == null ? 'Not attempted' : `${fin}% \u00b7 ${fin >= C.passMark ? 'Passed' : 'Not yet passed'}`)));
+    tb.append(h('tr', { class: 'total' }, h('td', null, 'Final Knowledge Check (graded)'), h('td', null, fin == null ? 'Not attempted' : `${fin}% \u00b7 ${fin >= C.passMark ? 'Passed' : 'Not yet passed'}`)));
     wrap.append(h('h2', { class: 'block-title' }, 'Scores'), h('div', { class: 'table-wrap' }, h('table', { class: 'data' }, h('thead', null, h('tr', null, h('th', null, 'Check'), h('th', null, 'Score'))), tb)));
-    wrap.append(h('h2', { class: 'block-title' }, 'Certificate requirements'), checklistEl());
+    wrap.append(h('h2', { class: 'block-title' }, 'Certificate Requirements'), checklistEl());
     return wrap;
   }
   function checklistEl() {
@@ -456,7 +453,7 @@
   function renderDownloads() {
     const wrap = h('div', { class: 'downloads' });
     const msg = h('p', { class: 'rf-status', 'aria-live': 'polite' });
-    wrap.append(h('h2', { class: 'block-title' }, 'Take your answers with you'),
+    wrap.append(h('h2', { class: 'block-title' }, 'Take Your Answers With You'),
       h('p', null, 'One document with every reflection, activity result and score, ready for your mentor session.'),
       h('div', { class: 'dl-row' },
         h('button', { class: 'btn primary', type: 'button', id: 'pdf-btn', onclick: () => window.Report.download(reportCtx(), msg) }, 'Download PDF of my answers'),

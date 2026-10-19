@@ -48,8 +48,8 @@
   function keyPoints(ctx) {
     const { h, def } = ctx;
     if (!def.keyPoints) return null;
-    return h('aside', { class: 'keypoints', role: 'note', 'aria-label': 'Coaching key points' },
-      h('h3', null, 'Coaching key points'),
+    return h('aside', { class: 'keypoints', role: 'note', 'aria-label': 'Coaching Key Points' },
+      h('h3', null, 'Coaching Key Points'),
       h('ul', null, def.keyPoints.map(k => h('li', null, k))));
   }
   function status(ctx, text, kind) { return ctx.h('p', { class: 'act-status ' + (kind || ''), role: 'status' }, text); }
@@ -104,7 +104,7 @@
       const unplaced = order.filter(id => !st.place[id]);
       if (!st.done) {
         const tray = h('div', { class: 'tray' + (selected ? ' armed' : ''), tabindex: selected ? '0' : null, role: selected ? 'button' : null, 'aria-label': 'Unsorted items' });
-        tray.append(h('p', { class: 'zone-label' }, unplaced.length ? `To sort (${unplaced.length})` : 'All items placed'));
+        tray.append(h('p', { class: 'zone-label' }, unplaced.length ? `To Sort (${unplaced.length})` : 'All Items Placed'));
         const list = h('div', { class: 'chips' }); unplaced.forEach(id => list.append(chip(id)));
         tray.append(list); zone(tray, null); body.append(tray);
       }
@@ -161,7 +161,7 @@
       if (st.done) {
         const ol = h('ol', { class: 'seq-answer' });
         def.items.forEach(i => ol.append(h('li', null, h('strong', null, i.text), h('span', null, i.detail))));
-        body.append(h('p', { class: 'zone-label' }, st.revealed ? 'Suggested order' : 'Your order, with the reasoning'), ol);
+        body.append(h('p', { class: 'zone-label' }, st.revealed ? 'Suggested Order' : 'Your Order, With the Reasoning'), ol);
         if (def.note) body.append(h('p', { class: 'hint' }, def.note));
         foot.append(status(ctx, st.revealed ? 'Compare the suggested order with yours and note where your reasoning differed.' : `Correct${st.attempts > 1 ? ` after ${st.attempts} attempts` : ''}.`, st.revealed ? '' : 'ok'), keyPoints(ctx));
         return;
@@ -281,8 +281,8 @@
       body.innerHTML = ''; foot.innerHTML = '';
       wrap = h('div', { class: 'm-wrap' });
       svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); svg.setAttribute('class', 'm-lines'); svg.setAttribute('aria-hidden', 'true');
-      const L = h('div', { class: 'm-col left' }, h('p', { class: 'zone-label' }, 'Predictable risk'), def.left.map(it => itemBtn('L', it)));
-      const Rc = h('div', { class: 'm-col right' }, h('p', { class: 'zone-label' }, 'Planning control'), rOrder.map(id => itemBtn('R', def.right.find(r => r.id === id))));
+      const L = h('div', { class: 'm-col left' }, h('p', { class: 'zone-label' }, 'Predictable Risk'), def.left.map(it => itemBtn('L', it)));
+      const Rc = h('div', { class: 'm-col right' }, h('p', { class: 'zone-label' }, 'Planning Control'), rOrder.map(id => itemBtn('R', def.right.find(r => r.id === id))));
       wrap.append(svg, L, Rc); body.append(wrap);
       if (ro) ro.disconnect();
       let lastW = -1;
@@ -428,7 +428,7 @@
           const tries = (st.wrong[i] || []).length;
           ol.append(h('li', null, h('strong', null, c.text), h('span', null, tries ? ` (${tries} other response${tries > 1 ? 's' : ''} tried first)` : ' (first try)')));
         });
-        body.append(h('p', { class: 'zone-label' }, 'Your path through the scenario'), ol);
+        body.append(h('p', { class: 'zone-label' }, 'Your Path Through the Scenario'), ol);
         foot.append(status(ctx, 'Scenario complete.', 'ok'), keyPoints(ctx),
           h('button', { class: 'btn ghost small', type: 'button', onclick: () => { if (!st.firstRun) st.firstRun = JSON.parse(JSON.stringify(st.wrong)); st.step = 0; st.wrong = {}; st.pick = null; st.finished = false; st.replays = (st.replays || 0) + 1; ctx.save(); draw(); } }, 'Replay the scenario'));
         return;

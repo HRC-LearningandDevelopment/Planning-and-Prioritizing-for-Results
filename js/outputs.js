@@ -62,7 +62,7 @@
     } catch (e) { /* logo optional */ }
 
     const x = 660;
-    g.fillStyle = CYAN; g.font = F(700, 30); g.fillText('Certificate of completion', x, 260);
+    g.fillStyle = CYAN; g.font = F(700, 30); g.fillText('Certificate of Completion', x, 260);
     g.fillStyle = SLATE; g.font = F(400, 34); g.fillText('This certifies that', x, 380);
     // Name, shrink to fit
     let size = 110; const maxW = W - x - 120;
@@ -100,7 +100,7 @@
         return wrap;
       }
       c.markComplete();
-      const canvas = h('canvas', { class: 'cert-canvas', role: 'img', 'aria-label': `Certificate of completion for ${c.S.name}` });
+      const canvas = h('canvas', { class: 'cert-canvas', role: 'img', 'aria-label': `Certificate of Completion for ${c.S.name}` });
       const msg = h('p', { class: 'rf-status', 'aria-live': 'polite' }, 'Drawing your certificate\u2026');
       const btn = h('button', { class: 'btn primary', type: 'button', disabled: true }, 'Download certificate (PNG)');
       btn.addEventListener('click', () => {
@@ -182,7 +182,7 @@
   function buildReport(c) {
     const { S, C, M, A, Q, R, P, V } = c;
     const fq = S.quiz.final;
-    const doc = { title: 'My answers: ' + C.title, meta: [
+    const doc = { title: 'My Answers: ' + C.title, meta: [
       ['Learner', S.name || '(name not entered)'],
       ['Path', S.path ? `${P[S.path].role}: ${P[S.path].title}` : 'Not chosen yet'],
       ['Time invested', c.fmtTime(S.seconds)],
@@ -273,7 +273,7 @@
     build: buildReport,
     async download(c, msgEl) {
       const doc = buildReport(c);
-      const fname = `My answers - ${c.C.title}${c.S.name ? ' - ' + c.S.name : ''}.pdf`.replace(/[\\/:*?"<>|]/g, '');
+      const fname = `My Answers - ${c.C.title}${c.S.name ? ' - ' + c.S.name : ''}.pdf`.replace(/[\\/:*?"<>|]/g, '');
       if (msgEl) msgEl.textContent = 'Preparing your PDF\u2026';
       try {
         await loadJsPDF();

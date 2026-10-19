@@ -1,4 +1,4 @@
-# Planning and Prioritising for Results
+# Planning and Prioritizing for Results
 
 Self-paced e-learning course for the HealthRecon Connect Succession Development Programme. Built from the facilitator-led workshop deck (slide text, tables and speaker notes), restructured for self-paced learning.
 
@@ -27,7 +27,7 @@ Any YouTube link form works (`watch?v=`, `youtu.be/`, `/embed/`, `/shorts/`). Vi
 
 ## Updating the course: bump the cache version every time
 
-Every CSS and JS tag in `index.html` carries a version, for example `css/styles.css?v=8`. **After any edit, bump the number on every tag** (e.g. to `?v=9`). GitHub Pages and browsers cache aggressively; without the bump, learners may keep running old code. If a change "isn't showing up", check DevTools → Network to confirm the new `?v=` loaded before assuming the code is wrong.
+Every CSS and JS tag in `index.html` carries a version, for example `css/styles.css?v=11`. **After any edit, bump the number on every tag** (e.g. to `?v=12`). GitHub Pages and browsers cache aggressively; without the bump, learners may keep running old code. If a change "isn't showing up", check DevTools → Network to confirm the new `?v=` loaded before assuming the code is wrong.
 
 ## Where things live
 
